@@ -81,6 +81,9 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   .then(response => response.text())
   .then(data => {
       alert('Email sent successfully!');
+      name.textContent = "";
+      email.textContent = "";
+      message.textContent = "";
   })
   .catch((error) => {
       console.error('Error:', error);
