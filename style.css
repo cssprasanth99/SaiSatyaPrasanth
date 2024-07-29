@@ -98,7 +98,7 @@ span {
 
 .home-img img {
     width: 25vw;
-    border-radius: 45%;
+    border-radius: 10%;
     /* animation: floatImage 4s ease-in-out infinite; */
 }
 
@@ -298,6 +298,21 @@ span {
 .projects-layer a img {
     font-size: 2rem;
     color: var(--snd-bf-color);
+}
+
+.projects-layer .skills {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.projects-layer .skills span {
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
 .contact h2 {
