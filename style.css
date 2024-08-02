@@ -144,6 +144,7 @@ span {
     background: var(--main-color);
     border-radius: 4rem;
     /* box-shadow: 0 0 1rem; */
+    margin: 0.5rem;
     font-size: 1.6rem;
     color: var(--bg-color);
     letter-spacing: 0.1rem;
