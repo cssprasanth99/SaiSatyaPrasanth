@@ -61,31 +61,49 @@ const typed = new Typed(".multiple-text", {
   loop: true,
 });
 
-
 //contact Form
 
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-  event.preventDefault();
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
 
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
 
-  fetch('http://localhost:3000/send-email', {
-      method: 'POST',
+    fetch("http://localhost:3000/send-email", {
+      method: "POST",
       headers: {
-          'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify({ name, email, message }),
-  })
-  .then(response => response.text())
-  .then(data => {
-      alert('Email sent successfully!');
-      name.textContent = "";
-      email.textContent = "";
-      message.textContent = "";
-  })
-  .catch((error) => {
-      console.error('Error:', error);
+    })
+      .then((response) => response.text())
+      .then((data) => {
+        alert("Email sent successfully!");
+        name.textContent = "";
+        email.textContent = "";
+        message.textContent = "";
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   });
+
+document.getElementById("resumeButton").addEventListener("click", function () {
+  const url = "./SAISATYAPRASANTHCHAMUTURI-FullStackWebDeveloper-2Lvb.pdf";
+
+  // Open in a new tab
+  window.open(url, "_blank");
+
+  // Create a temporary link element for download
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "sai-satya-prasanth-resume.pdf";
+
+  // Append to body, trigger click, and then remove
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 });
