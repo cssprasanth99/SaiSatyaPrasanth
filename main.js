@@ -72,7 +72,7 @@ document
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
 
-    fetch("http://localhost:3000/send-email", {
+    fetch("https://portfolio-backend-tddf.onrender.com/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -90,20 +90,3 @@ document
         console.error("Error:", error);
       });
   });
-
-document.getElementById("resumeButton").addEventListener("click", function () {
-  const url = "./SAISATYAPRASANTHCHAMUTURI-FullStackWebDeveloper-2Lvb.pdf";
-
-  // Open in a new tab
-  window.open(url, "_blank");
-
-  // Create a temporary link element for download
-  const link = document.createElement("a");
-  link.href = url;
-  link.download = "sai-satya-prasanth-resume.pdf";
-
-  // Append to body, trigger click, and then remove
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-});
