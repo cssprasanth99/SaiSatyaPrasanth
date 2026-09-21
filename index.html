@@ -2,214 +2,638 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Satya Prasanth Chamuturi | Full Stack & Software Developer</title>
+    <meta name="description"
+        content="Portfolio of Sai Satya Prasanth Chamuturi - Software Developer specializing in Python backend development, Frappe/ERPNext, Next.js, MERN stack, REST APIs, and enterprise integrations.">
+    <meta name="keywords"
+        content="Sai Satya Prasanth, Full Stack Developer, Software Developer, Frappe, ERPNext, Python, Next.js, React, Node.js, Web Developer Portfolio">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images/letter-p.png" type="image/x-icon">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="images/letter-p.png" type="image/x-icon">
+
+    <!-- DEVICON -->
+    <link rel="stylesheet" type='text/css'
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Satya Prasanth Portfolio</title>
 </head>
 
 <body>
-    <!--HEADER DESIGN-->
+    <!-- HEADER DESIGN -->
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+        <a href="#home" class="logo">Sai Satya Prasanth<span>.</span></a>
 
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <i class="fa-solid fa-bars" id="menu-icon" aria-label="Toggle Navigation"></i>
+
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
+            <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
-            <a href="./SAISATYAPRASANTHCHAMUTURI-FullStackWebDeveloper-tuuu.pdf" download="sai-satya-prasanth-resume.pdf"
-                target="_blank" class="btn">Resume</a>
+            <a href="./SAI_SATYA_PRASANTH_CHAMUTURI_FlowCV_Resume_2026-09-21.pdf"
+                download="Sai_Satya_Prasanth_Chamuturi_Resume.pdf" target="_blank" class="btn btn-nav">
+                <i class="fa-solid fa-file-arrow-down"></i> Resume
+            </a>
         </nav>
     </header>
 
     <!-- HOME SECTION DESIGN -->
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hi, Myself</h3>
-            <h1>Sai Satya Prasanth</h1>
-            <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p>An enthusiastic MERN Stack Web Developer with a strong set of technical as well as non-technical skills
-                and a dedication towards creating useful and interactive web applications.</p>
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/c-s-s-prasanth/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/cssprasanth99" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://x.com/cssprasanth99" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <div class="badge-status">
+                <span class="pulse-dot"></span> Available for Opportunities
             </div>
-            <a href="./SAISATYAPRASANTHCHAMUTURI-FullStackWebDeveloper-p7MO.pdf" download="sai-satya-prasanth-resume.pdf"
-                target="_blank"
-                class="btn">Download Resume</a>
+            <h3>Hi, I'm</h3>
+            <h1>Sai Satya Prasanth Chamuturi</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Software Developer with hands-on experience in Python backend development, Frappe/ERPNext, REST APIs,
+                JavaScript, Next.js, ERP customizations, and enterprise third-party integrations (Tally, WhatsApp,
+                Firebase/FCM, Razorpay).</p>
 
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/c-s-s-prasanth/" target="_blank" rel="noopener noreferrer"
+                    title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/cssprasanth99" target="_blank" rel="noopener noreferrer"
+                    title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:cssprasanth99@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:9441395592" title="Phone"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://x.com/cssprasanth99" target="_blank" rel="noopener noreferrer" title="X (Twitter)"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+            </div>
+
+            <div class="btn-group">
+                <a href="./SAI_SATYA_PRASANTH_CHAMUTURI_FlowCV_Resume_2026-09-21.pdf"
+                    download="Sai_Satya_Prasanth_Chamuturi_Resume.pdf" target="_blank" class="btn">
+                    <i class="fa-solid fa-download"></i> Download Resume
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fa-solid fa-paper-plane"></i> Contact Me
+                </a>
+            </div>
         </div>
+
         <div class="home-img">
-            <img src="./images/1.jpg" alt="img">
+            <div class="img-wrapper">
+                <img src="./images/1.jpg" alt="Sai Satya Prasanth Chamuturi">
+            </div>
         </div>
     </section>
 
     <!-- ABOUT SECTION -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="images/C-30240-min.jpg" alt="img">
+            <div class="img-wrapper">
+                <img src="images/C-30240-min.jpg" alt="Sai Satya Prasanth Profile Photo">
+            </div>
         </div>
+
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <h3>Full Stack Developer</h3>
-            <p>My name's Sai Satya Prasanth. I'm a full stack web developer based in Hyderbad, India. I am a B.Tech
-                graduate and love exploring new technologies in the field of Web Development and always try to adapt to
-                them. I believe in the concept of continuous learning by regularly upgrading my skills and enhancing my
-                knowledge. I have learnt MERN stack, data structures, algorithms, and soft skills at Prepleaf By Masai
-                School. And besides coding, I love playing cricket, and listening music. As a developer, my hunger for
-                learning has drastically increased. And I want to centralize my skills and learning for enhancement of
-                an organization and more of it, to enhance my career.</p>
+            <h3>Software Developer & Full Stack Specialist</h3>
+            <p>
+                I am a Software Developer with experience in Python backend development, Frappe/ERPNext, REST APIs,
+                JavaScript, Next.js, ERP customizations, and third-party integrations. Experienced in developing custom
+                DocTypes, document event hooks, business validations, backend APIs, scheduled jobs, workflow automation,
+                and ERP integrations.
+            </p>
+            <p>
+                I have hands-on experience across <strong>Finance, Accounts, CRM, HRMS, Inventory, Supply Chain,
+                Manufacturing, and Service Management</strong> applications, along with integrations involving
+                <strong>Tally, WhatsApp, Firebase/FCM, Razorpay, and mobile applications</strong>.
+            </p>
+            <p>
+                I hold a <strong>B.Tech</strong> from CVR College of Engineering and completed an intensive
+                <strong>Full Stack Web Dev & Gen AI</strong> program at Prepleaf by Masai. I am driven by building scalable,
+                reliable software architectures and delivering high-impact business solutions.
+            </p>
+
+            <div class="about-highlights">
+                <div class="highlight-item">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <div>
+                        <h4>Current Role</h4>
+                        <p>Associate Software Engineer @ 360 ITHUB</p>
+                    </div>
+                </div>
+                <div class="highlight-item">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <div>
+                        <h4>Education</h4>
+                        <p>B.Tech & Full Stack Dev (Gen AI)</p>
+                    </div>
+                </div>
+                <div class="highlight-item">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <div>
+                        <h4>Core Stack</h4>
+                        <p>Python, Frappe, Next.js, MERN, APIs</p>
+                    </div>
+                </div>
+                <div class="highlight-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Hyderabad / Bangalore, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION DESIGN -->
+    <section class="experience" id="experience">
+        <h2 class="heading">Work <span>Experience</span></h2>
+        <p class="section-subtitle">My professional journey in enterprise software engineering & full-stack development</p>
+
+        <div class="experience-container">
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="exp-role-company">
+                        <div class="company-badge">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div>
+                            <h3>Associate Software Engineer</h3>
+                            <h4 class="company-name">
+                                <a href="https://360ithub.com/" target="_blank" rel="noopener noreferrer">
+                                    360 ITHUB Pvt Ltd. <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="exp-meta">
+                        <span class="exp-duration"><i class="fa-regular fa-calendar"></i> 09/2024 – Present</span>
+                        <span class="exp-location"><i class="fa-solid fa-location-dot"></i> Bangalore, India</span>
+                    </div>
+                </div>
+
+                <div class="experience-body">
+                    <ul class="experience-bullets">
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Developed and customized <strong>Frappe/ERPNext applications</strong> using Python, JavaScript, custom DocTypes, document events, hooks, and controller extensions.</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Developed backend functionality for <strong>ERP, CRM, HRMS, Finance, Inventory, Supply Chain, Manufacturing, and Service Management</strong> workflows.</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Developed and maintained <strong>REST API endpoints</strong> for web and mobile applications, including authentication, data retrieval, transaction creation, and status updates.</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Built and integrated web applications using <strong>Next.js and JavaScript</strong>, consuming REST APIs and connecting frontend workflows with ERPNext/Frappe backend services.</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Implemented <strong>backend validations</strong> for business rules including pricing, invoice rates, lead data, inventory, financial transactions, and approval workflows.</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Developed <strong>scheduled and background processes</strong> for notifications, attendance processing, leave allocation, reporting, and automated business operations.</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Worked on <strong>ERP integrations with Tally, WhatsApp, Firebase Cloud Messaging (FCM), and payment platforms (Razorpay)</strong>, including data synchronization and transaction processing.</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Developed <strong>WhatsApp integration functionality</strong> for instance management, connection status, credit validation, and message/document dispatch.</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Developed custom <strong>dashboards and API-based reporting functionality</strong> for operational, financial, HR, and service-management data.</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Worked with QA and functional teams to troubleshoot defects, validate functionality, and support application releases and production fixes.</span>
+                        </li>
+                    </ul>
+
+                    <div class="exp-tech-tags">
+                        <span>Python</span>
+                        <span>Frappe Framework</span>
+                        <span>ERPNext</span>
+                        <span>Next.js</span>
+                        <span>JavaScript</span>
+                        <span>REST APIs</span>
+                        <span>WhatsApp API</span>
+                        <span>Tally Integration</span>
+                        <span>Firebase FCM</span>
+                        <span>Razorpay</span>
+                        <span>Workflow Automation</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- SKILL SECTION DESIGN -->
     <section class="skills" id="skills">
-        <h2 class="heading">My <span>Skills</span></h2>
-        <div class="skills-container">
-            <div class="skill-box">
-                <img width="48" height="48" src="https://img.icons8.com/color/48/html-5--v1.png" alt="html-5--v1" />
-                <h3>HTML</h3>
+        <h2 class="heading">Technical <span>Skills</span></h2>
+        <p class="section-subtitle">Technologies, frameworks, and enterprise tools I build with</p>
+
+        <div class="skills-wrapper">
+            <!-- Backend & ERP -->
+            <div class="skill-category">
+                <h3 class="category-title"><i class="fa-solid fa-server"></i> Backend & ERP Engineering</h3>
+                <div class="skills-container">
+                    <div class="skill-box">
+                        <i class="devicon-python-plain colored"></i>
+                        <h3>Python</h3>
+                        <span class="skill-level">Backend & Logic</span>
+                    </div>
+                    <div class="skill-box">
+                        <i class="fa-solid fa-cubes text-accent"></i>
+                        <h3>Frappe Framework</h3>
+                        <span class="skill-level">DocTypes & Hooks</span>
+                    </div>
+                    <div class="skill-box">
+                        <i class="fa-solid fa-diagram-project text-accent"></i>
+                        <h3>ERPNext</h3>
+                        <span class="skill-level">Modules & Workflows</span>
+                    </div>
+                    <div class="skill-box">
+                        <i class="devicon-nodejs-plain colored"></i>
+                        <h3>Node JS</h3>
+                        <span class="skill-level">Runtime</span>
+                    </div>
+                    <div class="skill-box">
+                        <i class="devicon-express-original"></i>
+                        <h3>Express JS</h3>
+                        <span class="skill-level">API Framework</span>
+                    </div>
+                    <div class="skill-box">
+                        <i class="fa-solid fa-network-wired text-accent"></i>
+                        <h3>REST APIs</h3>
+                        <span class="skill-level">Architecture & Auth</span>
+                    </div>
+                </div>
             </div>
-            <div class="skill-box">
-                <img width="48" height="48" src="https://img.icons8.com/color/48/css3.png" alt="css3" />
-                <h3>CSS</h3>
+
+            <!-- Frontend & Mobile -->
+            <div class="skill-category">
+                <h3 class="category-title"><i class="fa-solid fa-laptop-code"></i> Frontend & Mobile Development</h3>
+                <div class="skills-container">
+                    <div class="skill-box">
+                        <i class="devicon-nextjs-original-wordmark"></i>
+                        <h3>Next JS</h3>
+                        <span class="skill-level">App Router & SSR</span>
+                    </div>
+                    <div class="skill-box">
+                        <i class="devicon-react-original colored"></i>
+                        <h3>React JS</h3>
+                        <span class="skill-level">Components & State</span>
+                    </div>
+                    <div class="skill-box">
+                        <i class="devicon-vuejs-plain colored"></i>
+                        <h3>Vue JS</h3>
+                        <span class="skill-level">Reactive UI</span>
+                    </div>
+                    <div class="skill-box">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <h3>JavaScript</h3>
+                        <span class="skill-level">ES6+ Modern JS</span>
+                    </div>
+                    <div class="skill-box">
+                        <i class="devicon-flutter-plain colored"></i>
+                        <h3>Flutter</h3>
+                        <span class="skill-level">Cross-Platform</span>
+                    </div>
+                    <div class="skill-box">
+                        <i class="devicon-html5-plain colored"></i>
+                        <h3>HTML5 & CSS3</h3>
+                        <span class="skill-level">Responsive Design</span>
+                    </div>
+                </div>
             </div>
-            <div class="skill-box">
-                <img width="48" height="48" src="https://img.icons8.com/color/48/javascript--v1.png"
-                    alt="javascript--v1" />
-                <h3>JAVASCRIPT</h3>
+
+            <!-- Databases, Integrations & Tools -->
+            <div class="skill-category">
+                <h3 class="category-title"><i class="fa-solid fa-plug-circle-bolt"></i> Databases, Integrations & Tools</h3>
+                <div class="skills-container">
+                    <div class="skill-box">
+                        <i class="devicon-mongodb-plain colored"></i>
+                        <h3>Mongo DB</h3>
+                        <span class="skill-level">NoSQL Database</span>
+                    </div>
+                    <div class="skill-box">
+                        <i class="devicon-firebase-plain colored"></i>
+                        <h3>Firebase / FCM</h3>
+                        <span class="skill-level">Cloud Messaging</span>
+                    </div>
+                    <div class="skill-box">
+                        <i class="fa-brands fa-whatsapp text-accent" style="color: #25D366;"></i>
+                        <h3>WhatsApp API</h3>
+                        <span class="skill-level">Messaging & Dispatch</span>
+                    </div>
+                    <div class="skill-box">
+                        <i class="fa-solid fa-receipt text-accent"></i>
+                        <h3>Tally & Razorpay</h3>
+                        <span class="skill-level">ERP & Payments</span>
+                    </div>
+                    <div class="skill-box">
+                        <i class="devicon-git-plain colored"></i>
+                        <h3>Git</h3>
+                        <span class="skill-level">Version Control</span>
+                    </div>
+                    <div class="skill-box">
+                        <i class="devicon-github-original"></i>
+                        <h3>GitHub</h3>
+                        <span class="skill-level">CI/CD & Repos</span>
+                    </div>
+                </div>
             </div>
-            <div class="skill-box">
-                <img width="40" height="40" src="https://img.icons8.com/officel/40/react.png" alt="react" />
-                <h3>REACT</h3>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION DESIGN -->
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Education</span></h2>
+        <p class="section-subtitle">Academic foundations and specialized technical training</p>
+
+        <div class="education-container">
+            <div class="education-box">
+                <div class="education-icon">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+                <div class="education-content">
+                    <span class="edu-date"><i class="fa-regular fa-calendar"></i> 2023 – 2024</span>
+                    <h3>Full Stack Dev & Gen AI</h3>
+                    <h4>Prepleaf by Masai</h4>
+                    <p>
+                        Comprehensive intensive curriculum encompassing full-stack web development (MERN stack, Next.js),
+                        Generative AI applications, Data Structures & Algorithms, RESTful API design, and team-based agile projects.
+                    </p>
+                    <div class="edu-tags">
+                        <span>Full Stack MERN</span>
+                        <span>Next.js</span>
+                        <span>Gen AI</span>
+                        <span>DSA & System Design</span>
+                    </div>
+                </div>
             </div>
-            <div class="skill-box">
-                <img width="48" height="48" src="https://img.icons8.com/color/48/redux.png" alt="redux" />
-                <h3>REDUX</h3>
-            </div>
-            <div class="skill-box">
-                <img width="48" height="48" src="https://img.icons8.com/fluency/48/node-js.png" alt="node-js" />
-                <h3>NODE JS</h3>
-            </div>
-            <div class="skill-box">
-                <img width="64" height="64" src="https://img.icons8.com/nolan/64/express-js.png" alt="express-js" />
-                <h3>EXPRESS JS</h3>
-            </div>
-            <div class="skill-box">
-                <img width="48" height="48" src="https://img.icons8.com/color/48/mongo-db.png" alt="mongo-db" />
-                <h3>MONGO DB</h3>
-            </div>
-            <div class="skill-box">
-                <img width="48" height="48" src="https://img.icons8.com/color/48/python--v1.png" alt="python--v1" />
-                <h3>PYTHON</h3>
+
+            <div class="education-box">
+                <div class="education-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="education-content">
+                    <span class="edu-date"><i class="fa-regular fa-calendar"></i> 2017 – 2021</span>
+                    <h3>B.Tech - Bachelor of Technology</h3>
+                    <h4>CVR College of Engineering</h4>
+                    <span class="edu-location"><i class="fa-solid fa-location-dot"></i> Hyderabad, India</span>
+                    <p>
+                        Four-year comprehensive engineering program with in-depth focus on computing foundations,
+                        analytical problem solving, software engineering principles, and core technological systems.
+                    </p>
+                    <div class="edu-tags">
+                        <span>Engineering Foundations</span>
+                        <span>Computer Science</span>
+                        <span>Problem Solving</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- PROJECT SECTION DESIGN -->
     <section class="projects" id="projects">
-        <h2 class="heading">Latest <span>Projects</span></h2>
+        <h2 class="heading">Featured <span>Projects</span></h2>
+        <p class="section-subtitle">Explore some of my recent production-ready web applications</p>
+
         <div class="projects-container">
-            <div class="projects-box">
-                <img src="images/Screenshot (79).png" alt="img">
-                <div class="projects-layer">
-                    <h4>Pharmeasy Clone</h4>
-                    <p>Developed an interactive and user-friendly
-                        pharmeasy frontend using React, enhancing user
-                        experience with efficient navigation and responsive
-                        design.</p>
-                        <div class="skills">
-                            <span>React</span>
-                            <span>Chakra UI</span>
-                            <span>HTML</span>
-                        </div>
-                    <a href="https://pharmeasy-clone-2024.netlify.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+            <!-- Project 1: Job Portal -->
+            <div class="projects-card">
+                <div class="projects-img-box">
+                    <img src="images/job-portal.jpg" alt="Job Portal Application">
+                    <div class="projects-badge">Recruitment Platform</div>
                 </div>
-            </div>
-            <div class="projects-box">
-                <img src="images/Screenshot (76).png" alt="img">
-                <div class="projects-layer">
-                    <h4>KFC Clone</h4>
-                    <p>Developed a detailed and responsive KFC Clone
-                        website using HTML5, CSS3, and JavaScript,
-                        ensuring a user-friendly interface.</p>
-                        <div class="skills">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
-                        </div>
-                    <a href="https://frolicking-dragon-3f37c1.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            
-            <div class="projects-box">
-                <img src="images/Screenshot (80).png" alt="img">
-                <div class="projects-layer">
-                    <h4>Multiuser Employee Record Dashboard</h4>
-                    <p>A multiuser employee list storage application. User can store employees list and can perform CRUD operation.
-                        Developed using MERN stack</p>
-                    <div class="skills">
-                        <span>React</span>
-                        <span>NodeJS</span>
-                        <span>Express</span>
-                        <span>Mongodb</span>
+                <div class="projects-info">
+                    <h4>Job Portal Application</h4>
+                    <p>
+                        A comprehensive job recruitment platform connecting candidates with top employers. Features role-based
+                        dashboards, real-time job listings, salary and tech filters, applicant tracking, and recruiter posting workflows.
+                    </p>
+                    <div class="project-skills">
+                        <span>React.js</span>
+                        <span>Vite</span>
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>MongoDB</span>
+                        <span>REST APIs</span>
                     </div>
-                    <a href="https://employee-records-frontend.netlify.app/" target="_blank">
-                        <i class="fa-solid fa-up-right-from-square"></i>
-                    </a>
+                    <div class="projects-links">
+                        <a href="https://job-portal-client-two-kappa.vercel.app/" target="_blank" rel="noopener noreferrer"
+                            class="project-btn" title="Live Demo">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/cssprasanth99/Job-Portal" target="_blank" rel="noopener noreferrer"
+                            class="project-btn btn-ghost" title="GitHub Code">
+                            <i class="fa-brands fa-github"></i> Code
+                        </a>
+                    </div>
                 </div>
             </div>
-            
-            
+
+            <!-- Project 2: StayNext -->
+            <div class="projects-card">
+                <div class="projects-img-box">
+                    <img src="images/staynext.jpg" alt="StayNext Booking Platform">
+                    <div class="projects-badge">Hospitality & Booking</div>
+                </div>
+                <div class="projects-info">
+                    <h4>StayNext - Booking Platform</h4>
+                    <p>
+                        Modern property rental and accommodation booking web app built with Next.js App Router. Features secure user
+                        authentication, interactive room browsing, dynamic date and guest filters, and seamless reservation flows.
+                    </p>
+                    <div class="project-skills">
+                        <span>Next.js</span>
+                        <span>React</span>
+                        <span>Tailwind CSS</span>
+                        <span>REST APIs</span>
+                        <span>JWT Auth</span>
+                        <span>Vercel</span>
+                    </div>
+                    <div class="projects-links">
+                        <a href="https://staynext-one.vercel.app/login" target="_blank" rel="noopener noreferrer"
+                            class="project-btn" title="Live Demo">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/cssprasanth99/staynext" target="_blank" rel="noopener noreferrer"
+                            class="project-btn btn-ghost" title="GitHub Code">
+                            <i class="fa-brands fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: QuickChat -->
+            <div class="projects-card">
+                <div class="projects-img-box">
+                    <img src="images/quickchat.jpg" alt="QuickChat Real-Time Chat App">
+                    <div class="projects-badge">Real-Time Messaging</div>
+                </div>
+                <div class="projects-info">
+                    <h4>QuickChat - Real-Time App</h4>
+                    <p>
+                        High-performance instant messaging web application featuring user authentication, real-time message delivery,
+                        active online/typing presence, interactive media sharing, and modern glassmorphism UI.
+                    </p>
+                    <div class="project-skills">
+                        <span>React.js</span>
+                        <span>Vite</span>
+                        <span>Node.js</span>
+                        <span>WebSockets</span>
+                        <span>MongoDB</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+                    <div class="projects-links">
+                        <a href="https://chat-app-peach-ten-54.vercel.app/login" target="_blank" rel="noopener noreferrer"
+                            class="project-btn" title="Live Demo">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/cssprasanth99/Chat-App.git" target="_blank" rel="noopener noreferrer"
+                            class="project-btn btn-ghost" title="GitHub Code">
+                            <i class="fa-brands fa-github"></i> Code
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- CONTACT SECTION DESIGN -->
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
+        <h2 class="heading">Get In <span>Touch</span></h2>
+        <p class="section-subtitle">Have a project in mind or want to discuss opportunities? Let's connect!</p>
 
-        <form id="contact-form">
-            <div class="input-box">
-                <input type="text" placeholder="Full name" id="name" required>
-                <input type="email" placeholder="Email Address" id="email" required>
+        <div class="contact-wrapper">
+            <!-- Contact Cards -->
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <a href="mailto:cssprasanth99@gmail.com">cssprasanth99@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <a href="tel:9441395592">+91 9441395592</a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Location</h4>
+                        <p>Hyderabad / Bangalore, India</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>LinkedIn</h4>
+                        <a href="https://www.linkedin.com/in/c-s-s-prasanth/" target="_blank" rel="noopener noreferrer">
+                            c-s-s-prasanth
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="input-box">
-                <input type="text" placeholder="Mobile Number">
-                <input type="text" placeholder="Subject" id="message">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
+
+            <!-- Contact Form -->
+            <form id="contact-form" class="contact-form">
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" placeholder="John Doe" id="name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" placeholder="john@example.com" id="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" placeholder="+91 9876543210" id="phone">
+                    </div>
+                    <div class="input-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" placeholder="Project Inquiry / Job Opportunity" id="subject" required>
+                    </div>
+                </div>
+                <div class="input-group full-width">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" rows="6" placeholder="Hi Sai Satya Prasanth, I would like to discuss..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit" id="submit-btn">
+                    <i class="fa-solid fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
     </section>
 
     <!-- FOOTER DESIGN -->
     <footer class="footer">
-        <div class="footer-text">
-            <p>
-                <i class="fa-regular fa-envelope"></i>
-                <a href="mailto:cssprasanth99@gmail.com">cssprasanth99@gmail.com</a>
-                <i class="fa-solid fa-phone"></i>
-                <a href="tel:9441395592">9441395592</a>
-            </p>
+        <div class="footer-brand">
+            <h3>Sai Satya Prasanth Chamuturi</h3>
+            <p>Software Developer | Python, Frappe/ERPNext, Next.js & MERN Stack</p>
         </div>
-        <div class="footer-iconTop">
-            <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/c-s-s-prasanth/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/cssprasanth99" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:cssprasanth99@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:9441395592" title="Phone"><i class="fa-solid fa-phone"></i></a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Sai Satya Prasanth Chamuturi. All rights reserved.</p>
+            <div class="footer-iconTop">
+                <a href="#home" title="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
         </div>
     </footer>
 
-    <!-- MAIN JS -->
+    <!-- TYPED JS -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- SCROLL REVEAL JS -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- MAIN JS -->
     <script src="main.js"></script>
 </body>
 

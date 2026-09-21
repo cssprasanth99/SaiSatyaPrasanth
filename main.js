@@ -1,92 +1,152 @@
-// Toggle icon navbar
-let menuIcon = document.querySelector("#menu-icon");
-let navbar = document.querySelector(".navbar");
+// ==========================================================
+// PORTFOLIO JAVASCRIPT - SAI SATYA PRASANTH CHAMUTURI
+// ==========================================================
 
-menuIcon.onclick = () => {
-  menuIcon.classList.toggle("fa-xmark");
-  navbar.classList.toggle("active");
-};
+document.addEventListener("DOMContentLoaded", () => {
+  // Mobile Navigation Toggle
+  const menuIcon = document.querySelector("#menu-icon");
+  const navbar = document.querySelector(".navbar");
+  const navLinks = document.querySelectorAll("header nav a");
 
-// Scroll section active link
-let sections = document.querySelectorAll("section");
-let navLinks = document.querySelectorAll("header nav a");
+  if (menuIcon && navbar) {
+    menuIcon.addEventListener("click", () => {
+      menuIcon.classList.toggle("fa-xmark");
+      navbar.classList.toggle("active");
+    });
 
-window.onscroll = () => {
-  sections.forEach((sec) => {
-    let top = window.scrollY;
-    let offset = sec.offsetTop - 150;
-    let height = sec.offsetHeight;
-    let id = sec.getAttribute("id");
-
-    if (top >= offset && top < offset + height) {
-      navLinks.forEach((link) => {
-        link.classList.remove("active");
-        document
-          .querySelector("header nav a[href*=" + id + "]")
-          .classList.add("active");
+    // Close menu when clicking on any navigation link
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        menuIcon.classList.remove("fa-xmark");
+        navbar.classList.remove("active");
       });
+    });
+  }
+
+  // Scroll section active link and sticky navbar
+  const sections = document.querySelectorAll("section");
+  const header = document.querySelector("header");
+
+  window.addEventListener("scroll", () => {
+    const scrollPosition = window.scrollY;
+
+    sections.forEach((sec) => {
+      const top = scrollPosition;
+      const offset = sec.offsetTop - 180;
+      const height = sec.offsetHeight;
+      const id = sec.getAttribute("id");
+
+      if (top >= offset && top < offset + height) {
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          const activeNav = document.querySelector("header nav a[href*=" + id + "]");
+          if (activeNav && !activeNav.classList.contains("btn-nav")) {
+            activeNav.classList.add("active");
+          }
+        });
+      }
+    });
+
+    // Sticky navbar toggle
+    if (header) {
+      header.classList.toggle("sticky", scrollPosition > 80);
     }
   });
 
-  // Sticky navbar
-  let header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY > 100);
+  // Dynamic Current Year in Footer
+  const currentYearElem = document.getElementById("current-year");
+  if (currentYearElem) {
+    currentYearElem.textContent = new Date().getFullYear();
+  }
 
-  // Remove navbar and toggle icon
-  menuIcon.classList.remove("fa-xmark");
-  navbar.classList.remove("active");
-};
+  // Typed JS initialization
+  if (document.querySelector(".multiple-text") && typeof Typed !== "undefined") {
+    new Typed(".multiple-text", {
+      strings: [
+        "Software Developer",
+        "Full Stack Developer",
+        "Python & Frappe Developer",
+        "ERPNext & Next.js Specialist",
+        "Backend & Integration Engineer"
+      ],
+      typeSpeed: 60,
+      backSpeed: 40,
+      backDelay: 1500,
+      loop: true,
+    });
+  }
 
-// Scroll reveal
-ScrollReveal({
-  distance: "80px",
-  duration: 2000,
-  delay: 200,
-});
+  // ScrollReveal Animations
+  if (typeof ScrollReveal !== "undefined") {
+    const sr = ScrollReveal({
+      distance: "50px",
+      duration: 1600,
+      delay: 150,
+      reset: false,
+    });
 
-ScrollReveal().reveal(".home-content", { origin: "top" });
-ScrollReveal().reveal(
-  ".home-img, .skills-container, .portfolio-box, .contact form",
-  { origin: "bottom" }
-);
-ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
-ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
+    sr.reveal(".badge-status, .heading, .section-subtitle", { origin: "top" });
+    sr.reveal(".home-content h1, .home-content h3, .home-content p, .btn-group, .social-media", {
+      origin: "left",
+      interval: 100,
+    });
+    sr.reveal(".home-img, .about-img", { origin: "right" });
+    sr.reveal(".about-content", { origin: "left" });
+    sr.reveal(".experience-card", { origin: "bottom", delay: 200 });
+    sr.reveal(".skill-category", { origin: "bottom", interval: 150 });
+    sr.reveal(".education-box", { origin: "bottom", interval: 150 });
+    sr.reveal(".projects-card", { origin: "bottom", interval: 150 });
+    sr.reveal(".contact-card", { origin: "left", interval: 100 });
+    sr.reveal(".contact-form", { origin: "right", delay: 200 });
+  }
 
-// Typed JS
-const typed = new Typed(".multiple-text", {
-  strings: ["Frontend Developer", "Full Stack Web Developer"],
-  typeSpeed: 70,
-  backSpeed: 70,
-  backDelay: 1000,
-  loop: true,
-});
+  // Contact Form Submission Handler
+  const contactForm = document.getElementById("contact-form");
+  const submitBtn = document.getElementById("submit-btn");
 
-//contact Form
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault();
 
-document
-  .getElementById("contact-form")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const phone = document.getElementById("phone") ? document.getElementById("phone").value.trim() : "";
+      const subject = document.getElementById("subject") ? document.getElementById("subject").value.trim() : "Portfolio Contact";
+      const message = document.getElementById("message").value.trim();
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+      if (!name || !email || !message) {
+        alert("Please fill in all required fields.");
+        return;
+      }
 
-    fetch("https://portfolio-backend-tddf.onrender.com/send-email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ name, email, message }),
-    })
-      .then((response) => response.text())
-      .then((data) => {
-        alert("Email sent successfully!");
-        name.textContent = "";
-        email.textContent = "";
-        message.textContent = "";
+      const originalBtnText = submitBtn ? submitBtn.innerHTML : "Send Message";
+      if (submitBtn) {
+        submitBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Sending...`;
+        submitBtn.disabled = true;
+      }
+
+      fetch("https://portfolio-backend-tddf.onrender.com/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, phone, subject, message }),
       })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
-  });
+        .then((response) => response.text())
+        .then(() => {
+          alert("Thank you! Your message has been sent successfully.");
+          contactForm.reset();
+        })
+        .catch((error) => {
+          console.error("Form error:", error);
+          alert("Thank you! If there is any network issue sending directly, you can also reach me directly at cssprasanth99@gmail.com.");
+        })
+        .finally(() => {
+          if (submitBtn) {
+            submitBtn.innerHTML = originalBtnText;
+            submitBtn.disabled = false;
+          }
+        });
+    });
+  }
+});
